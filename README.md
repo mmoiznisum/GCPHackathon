@@ -18,12 +18,11 @@ This way of getting travel inspiration has many benefits in terms of **accessibi
 
 Thanks to Dialogflow, this application could work as well in **other languages**. We would just need to provide more training sentences, and then translate some parameters using Google Translation API. Dialogflow will get the `period` correctly with same format `YYYY-MM-DDTHH:MM:SS+00:00`.
 
-Steps:
+Sentences that Dialogflow understand:
 - User can select **Airline** *I want to go to Lahore*
 - user can select **Origin** *I want to fly from Lahore to Islamabad*
 - Add more inspiration capabilities: i.e. *'I want to fly to a sunny place in December'*
 - Allow more inputs from the User: *'Flights to Lahore for 2 adults and 1 infant in Business'*
-- Use context not only carrying dates and inputing a new destination, but viceversa: i.e User: *'I want to fly to London next weekend'*, (agent response), *'And for the last weekend of November?'*
 
 Some examples:
 ![Screenshot](/assets/images/speeches.png)
