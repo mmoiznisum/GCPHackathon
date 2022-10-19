@@ -25,7 +25,7 @@ Sentences that Dialogflow understand:
 - Allow more inputs from the User: *'Flights to Lahore for 2 adults and 1 infant in Business'*
 
 Some examples:
-![Screenshot](/assets/images/speeches.png)
+![Screenshot](/assets/images/speeches1.png)
 
 ## Dialogflow setup
 [Documentation](https://cloud.google.com/dialogflow/docs/)
