@@ -14,8 +14,6 @@ The User can interact with the assistant via **voice**, **keyboard** or **touchi
 
 This way of getting travel inspiration has many benefits in terms of **accessibility** compared to traditional booking tools offered by the airlines websites. In addition, this new channel is much faster.
 
-![Screenshot](/assets/images/comparison.png)
-
 Thanks to Dialogflow, this application could work as well in **other languages**. We would just need to provide more training sentences, and then translate some parameters using Google Translation API. Dialogflow will get the `period` correctly with same format `YYYY-MM-DDTHH:MM:SS+00:00` as in English.
 
 Steps:
@@ -26,6 +24,8 @@ Steps:
 - Use context not only carrying dates and inputing a new destination, but viceversa: i.e User: *'I want to fly to London next weekend'*, (agent response), *'And for the last weekend of November?'*
 
 Some examples:
+![Screenshot](/assets/images/speeches.png)
+
 ## Dialogflow setup
 (Pending) [here](https://cloud.google.com/dialogflow/docs/)
 
@@ -43,7 +43,7 @@ We use context to carry information between consecutive interactions:
 ## Architecture
 (Pending)
 
-![Screenshot](/assets/images/NEWflow.png)
+![Screenshot](/assets/images/flow.png)
 
 
 #### Welcome and Fallback functions.
@@ -63,7 +63,7 @@ First, using a `POST` request we get the `access_token`. Then, with a `GET` requ
 
 ## Appendix: Destination images and similar destinations Suggestion Chips
 
-The main database we will use is stored in Firestore. We will load a [reference table](/aIrport_codes_200.csv) for 200 destinations.
+The main database we will use is stored in Firestore. We will load a [reference table](/assets/airport_codes_200.csv) for 200 destinations.
 
 Each destination in the database has an **image url** and a list of **similar destinations**.
 
