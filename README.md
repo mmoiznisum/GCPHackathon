@@ -60,8 +60,6 @@ The Amadeus API has a standard POST/GET interaction, you can read more about it 
 
 First, using a `POST` request we get the `access_token`. Then, with a `GET` request we ask for the json file containing flights and fares. 
 
-Here you can see an example of [Amadeus API response](AmadeusResponseExample.json)
- 
 
 ## Appendix: Destination images and similar destinations Suggestion Chips
 
