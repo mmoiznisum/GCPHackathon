@@ -3,6 +3,7 @@
 - [Overview](#overview)
 - [Dialogflow setup](#dialogflow-setup)
 - [Architecture](#architecture)
+- [Amadeus API](#amadeusapi)
 - [Appendix: Destination images and similar destinations Suggestion Chips](#appendix-destination-images-and-similar-destinations-suggestion-chips)
 
 
@@ -54,6 +55,7 @@ Fallback Intent: triggered when the Agent can't match the query with any Intent
 
 In both cases, we want the user to get some [Suggestion Chips](https://developers.google.com/actions/assistant/responses) to give some inspiration.
 
+## Amadeus API
 (Pending)
 
 The Amadeus API has a standard POST/GET interaction, you can read more about it [here](https://developers.amadeus.com/self-service/category/air/api-doc/flight-low-fare-search/api-reference). You will need to create a test account to get your `client_id` and `client_secret`.
