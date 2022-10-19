@@ -8,7 +8,6 @@
 
 
 ## Overview
-
 Web Chatbots have taken over the world in all fields. Be it any industry, chatbots have become an essential part of enhancing the user experience of any service or product. The entire Business to Customer segment has been sorted by the involvement of Web Chatbots on the Cloud.
 
 The aim of this idea is to get Users' queries about how much a flight to a destination using Google Assistant, to get the lowest fare, and reply back to the User.
@@ -42,13 +41,10 @@ We use context to carry information between consecutive interactions:
 
 
 ## Architecture
-(Pending)
-
 ![Screenshot](/assets/images/flow.png)
 
 
-#### Welcome and Fallback functions.
-
+#### Welcome and Fallback functions
 Welcome Intent: triggered when the user starts the conversation.
 
 Fallback Intent: triggered when the Agent can't match the query with any Intent
@@ -61,7 +57,6 @@ The Amadeus API has a standard POST/GET interaction, you can read more about it 
 First, using a `POST` request we get the `access_token`. Then, with a `GET` request we ask for the json file containing flights and fares. 
 
 ## Appendix: Destination images and similar destinations Suggestion Chips
-
 The main database we will use is stored in Firestore. We will load a [reference table](/assets/airport_codes_200.csv) for 200 destinations.
 
 We could build this database with images and calculate the similarity based on users behaviour, geographic proximity, themes , etc. In this example we will use an already built database from [Nomadlist.com](https://nomadlist.com), a nice website with lots of info about places to visit. 
