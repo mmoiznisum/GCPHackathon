@@ -3,7 +3,6 @@
 - [Overview](#overview)
 - [Dialogflow setup](#dialogflow-setup)
 - [Architecture](#architecture)
-- [Code description](#code-description)
 - [Appendix: Destination images and similar destinations Suggestion Chips](#appendix-destination-images-and-similar-destinations-suggestion-chips)
 
 
