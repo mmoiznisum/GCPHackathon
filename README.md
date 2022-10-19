@@ -1,4 +1,4 @@
-# GCPHackathon
+# GCPHackathon: Just an idea with Dialogflow + Amadeus API
 ## Content
 - [Overview](#overview)
 - [Dialogflow setup](#dialogflow-setup)
@@ -8,13 +8,15 @@
 
 ## Overview
 
-The aim of this project is to get User's **queries about how much is a flight to a destination** using Google Assistant, to **get the lowest fare** from [Amadeus](https://amadeus.com/en/industries/airlines), and **reply back** to the User. 
+Web Chatbots have taken over the world in all fields. Be it any industry, chatbots have become an essential part of enhancing the user experience of any service or product. The entire Business to Customer segment has been sorted by the involvement of Web Chatbots on the Cloud.
 
-The User can interact with the assistant via **voice**, **keyboard** or **touching** the device screen.
+The aim of this idea is to get Users' queries about how much a flight to a destination using Google Assistant, to get the lowest fare, and reply back to the User.
+
+The User can interact with the assistant via **voice**.
 
 This way of getting travel inspiration has many benefits in terms of **accessibility** compared to traditional booking tools offered by the airlines websites. In addition, this new channel is much faster.
 
-Thanks to Dialogflow, this application could work as well in **other languages**. We would just need to provide more training sentences, and then translate some parameters using Google Translation API. Dialogflow will get the `period` correctly with same format `YYYY-MM-DDTHH:MM:SS+00:00` as in English.
+Thanks to Dialogflow, this application could work as well in **other languages**. We would just need to provide more training sentences, and then translate some parameters using Google Translation API. Dialogflow will get the `period` correctly with same format `YYYY-MM-DDTHH:MM:SS+00:00`.
 
 Steps:
 - User can select **Airline** *I want to go to Lahore*
@@ -58,12 +60,9 @@ The Amadeus API has a standard POST/GET interaction, you can read more about it 
 
 First, using a `POST` request we get the `access_token`. Then, with a `GET` request we ask for the json file containing flights and fares. 
 
-
 ## Appendix: Destination images and similar destinations Suggestion Chips
 
 The main database we will use is stored in Firestore. We will load a [reference table](/assets/airport_codes_200.csv) for 200 destinations.
 
-Each destination in the database has an **image url** and a list of **similar destinations**.
-
-You could build this database with your own images and calculate the similarity based on users behaviour on your website, geographic proximity, themes (beach, ski, nature...) , etc. In this example we will use an already built database from [Nomadlist.com](https://nomadlist.com), a nice website with lots of info about places to visit. 
+We could build this database with images and calculate the similarity based on users behaviour, geographic proximity, themes , etc. In this example we will use an already built database from [Nomadlist.com](https://nomadlist.com), a nice website with lots of info about places to visit. 
 
