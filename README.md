@@ -30,7 +30,7 @@ Some examples:
 ![Screenshot](/assets/images/speeches.png)
 
 ## Dialogflow setup
-(Pending) [here](https://cloud.google.com/dialogflow/docs/)
+Doc:[here](https://cloud.google.com/dialogflow/docs/)
 ![Screenshot](/assets/images/dialogflow1.png)
 
 Make sure you enable Webhook calls for the Intent.
