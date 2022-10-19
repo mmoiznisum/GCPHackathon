@@ -27,16 +27,14 @@ Some examples:
 ![Screenshot](/assets/images/speeches.png)
 
 ## Dialogflow setup
+![Screenshot](/assets/images/dialogflow1.png)
 (Pending) [here](https://cloud.google.com/dialogflow/docs/)
 
 Make sure you enable Webhook calls for the Intent.
 
 In this example we create two follow-up intentes directly from Dialogflow console (not fulfullment) that simulate the User asking *'Hey, email me this info'* or *'Please book me in this flight'*.
 
-Find some screenshots in the [appendix](#appendix:-dialogflow-screenshots)
-
 We use context to carry information between consecutive interactions:
-
 ![Screenshot](/assets/images/contextdiagram.png)
 
 
